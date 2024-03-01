@@ -54,3 +54,27 @@ function submit(){
         alert("Thanks For Join : " + name.value)
     }
 }
+
+
+let btn = document.querySelector('.subbtn')
+
+btn.addEventListener('click', ()=>{
+    
+    let weight = document.querySelector('.weight').value
+    let height = document.querySelector('.height').value
+    weight= parseFloat(weight)
+    height= parseFloat(height)
+    if(weight == NaN || height==NaN){
+        alert("Write a number!!")
+    }else{
+        const h1 = document.querySelector('.answer').value=(weight/height).toPrecision(3)
+    }
+    
+})
+
+let ref = document.querySelector('.refresh')
+ref.addEventListener('click',()=>{
+    let weight = document.querySelector('.weight').value=""
+    let height = document.querySelector('.height').value=""
+    const h1 = document.querySelector('.answer').value=""
+})

@@ -3,12 +3,19 @@
   padding: 0%;
 }
 body{
+  
   background-color:rgb(1, 1, 14);
   font-family: 'Roboto', sans-serif;
   color: white;
+  overflow-x: hidden;
+  
+}
+.inp{
+  width: 100px;
 }
 nav{
-  position: fixed;
+  position: sticky;
+
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -22,6 +29,7 @@ nav{
 nav ul li a{
   margin-inline: 22px;
   text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
   color: white;
 }
 ul li{
@@ -35,6 +43,7 @@ nav ul{
   font-size: 25px;
   margin-left: 33px;
   color: rgb(42, 250, 42);
+  font-family: 'Times New Roman', Times, serif;
 }
 ul li button{
   width: 100px;
@@ -70,19 +79,22 @@ ul li a:hover{
 .home .homeText{
   margin-top: 200px;
   margin-left: 44px;
+  font-family: 'Times New Roman', Times, serif;
 }
 .homeText h1{
-  font-size: 85px;
+  font-size: 91px;
   color: rgb(55, 248, 55);
 }
 .homeText h3{
   margin-top: 22px;
-  font-size: 22px;
+  font-size: 31px;
 }
 .homeText p{
   margin-top: 22px;
   color: silver;
+  font-size: 15px;
 }
+
 .homeText button{
   margin-top: 22px;
   font-size: 22px;
@@ -267,4 +279,36 @@ ul li a:hover{
 .footerText p{
 margin-top: 11px;
 color: silver;
+}
+/* .bmi{
+  position: absolute;
+  top: 100px;
+  left:10px
+} */
+
+video{
+  top: 100px;
+  width:100vw;
+  height: 100vh;
+  object-fit: cover;
+ 
+
+}
+.homeText{
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+p a{
+  text-decoration: none;
+  color: silver;
+}
+
+.join{
+  width: 120px;
+  border-radius: 10px;
+}
+a{
+  text-decoration: none;
+  color: rgb(37, 244, 37);
 }
